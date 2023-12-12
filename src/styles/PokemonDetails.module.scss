@@ -1,0 +1,62 @@
+.pokemonDetails {
+  color: white;
+  background: url('/path/to/your/background-image.png'); // Replace with your actual path
+  font-family: 'Courier New', Courier, monospace;
+
+  .header {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .info {
+    .name {
+      display: flex;
+      align-items: baseline;
+      h2 {
+        margin-right: 1rem;
+      }
+    }
+    .type, .weakness {
+      margin: 0.5rem 0;
+      span {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        margin-right: 0.5rem;
+        border-radius: 1rem;
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+    }
+  }
+
+  .imageContainer {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  .stats {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    padding: 1rem;
+    .stat {
+      display: flex;
+      justify-content: space-between;
+      margin: 0.5rem 0;
+    }
+  }
+}

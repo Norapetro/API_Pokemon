@@ -1,0 +1,11 @@
+$body-bg: #f9f9f9;
+
+.appBody {
+  background-color: $body-bg;
+  min-height: 100vh; // Asegura que el contenido se extienda verticalmente
+
+  .content {
+    margin: auto;
+    max-width: 1200px; // Un ancho máximo para asegurar la legibilidad en pantallas grandes
+  }
+}
