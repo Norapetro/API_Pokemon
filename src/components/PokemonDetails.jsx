@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import styles from '../styles/PokemonDetails.module.scss';
 
 const PokemonDetails = () => {
@@ -27,22 +28,34 @@ const PokemonDetails = () => {
         </div>
       </div>
       <div className={styles.container}>
-        <div className={styles.info}>
-          <div className={styles.type}>
-            <h3>Type</h3>
-            {pokemonDetails.types.map(type => <span key={type.type.name}>{type.type.name}</span>)}
+        <motion.div
+         animate={{ opacity: 1 }} 
+         initial={{ opacity: 0 }}
+         transition={{ duration: 1 }}
+        >
+          <div className={styles.info}>
+            <div className={styles.type}>
+              <h3>Type</h3>
+              {pokemonDetails.types.map(type => <span key={type.type.name}>{type.type.name}</span>)}
+            </div>
+            <div className={styles.weakness}>
+              {/* You'll need to implement a method to calculate weaknesses */}
+              <h3>Weakness</h3>
+              {/* Dummy data for example */}
+              <span>Water</span>
+              <span>Ground</span>
+            </div>
           </div>
-          <div className={styles.weakness}>
-            {/* You'll need to implement a method to calculate weaknesses */}
-            <h3>Weakness</h3>
-            {/* Dummy data for example */}
-            <span>Water</span>
-            <span>Ground</span>
+        </motion.div>
+        
+        <motion.div
+          animate={{ scale: 1.5 }}
+          transition={{ duration: 0.5 }}
+        >
+          <div className={styles.imageContainer}>
+            <img src={pokemonDetails.sprites.other.dream_world.front_default} alt={pokemonDetails.name} />
           </div>
-        </div>
-        <div className={styles.imageContainer}>
-          <img src={pokemonDetails.sprites.other.dream_world.front_default} alt={pokemonDetails.name} />
-        </div>
+        </motion.div>        
         <div className={styles.stats}>
           <h3>Status</h3>
           {/* Map through stats for display */}
