@@ -16,7 +16,7 @@ const PokemonList = ({ searchQuery }) => {
     return <p><img src={loader} alt="loader" /></p>;
   }
   return (
-    <div className={styles.pokemonList}>
+  <div className={styles.pokemonList}>
     {filteredPokemons.map((pokemon) => (
       <PokemonCard key={pokemon.name} pokemon={pokemon}/>
     ))}
