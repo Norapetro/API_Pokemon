@@ -13,6 +13,55 @@ $hover-color: #f2f2f2;
   }
 }
 
+/* 
+.button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+}
+
+
+.button__icon {
+  margin-right: 10px;
+}
+
+.button__text {
+  font-weight: bold;
+}
+
+
+.button--large {
+  padding: 15px 30px;
+  font-size: larger;
+} */
+
+.button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+
+  &--large {
+    padding: 15px 30px;
+    font-size: larger;
+  }
+
+  &__icon {
+    margin-right: 10px;
+  }
+
+  &__text {
+    font-weight: bold;
+  }
+}
+
+.search{
+  background-color: #f2f2f2;
+  
+  &__img {
+    width: 20px;
+    height: 20px;
+  }
+}
 
 // Define the keyframes for the spinning animation
 @keyframes spin {

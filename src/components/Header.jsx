@@ -65,12 +65,20 @@ const Header = ({ onSearchChange }) => {
         placeholder="Buscar Pokémon..."
         onChange={(event) => onSearchChange(event.target.value)}
       />
+      <div className="search">
+        <div className="search__img">🔍</div>
+      </div>
       <StyledNav>
         {/* Links de navegación */}
         <Link to="/" onClick={() => onSearchChange("")}>Home</Link>
         <Link to="/about">About</Link>
       </StyledNav>
       {/* NOTACION BEM */}
+      <button className="button button--large">
+        <span className="button__icon">Icon</span>
+        <span className="button__text">Click me</span>
+      </button>
+
     </StyledHeader>
   );
 };
