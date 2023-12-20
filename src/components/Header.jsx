@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import styles from "../styles/Header.module.scss";
 import pokeball from "../assets/pokeball.svg";
+import Button from '@mui/material/Button';
 import PropTypes from "prop-types";
 
 const Header = ({ onSearchChange }) => {
@@ -20,6 +21,7 @@ const Header = ({ onSearchChange }) => {
         {/* Links de navegación */}
         <Link to="/" onClick={() => onSearchChange("")}>Home</Link>
         <Link to="/about">About</Link>
+        <Button variant="contained">Hello world</Button>
       </nav>
     </header>
   );
