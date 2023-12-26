@@ -57,6 +57,7 @@ const Header = ({ onSearchChange }) => {
     <StyledHeader>
       <div className={styles.logo}>
         {/* Logo o título de la aplicación */}
+        <img src="https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png" />
         <Link to="/"><img width={30} src={pokeball} alt="pokeball" /></Link>
       </div>
       <input
@@ -66,7 +67,7 @@ const Header = ({ onSearchChange }) => {
         onChange={(event) => onSearchChange(event.target.value)}
       />
       <div className="search">
-        <div className="search__img">🔍</div>
+        {/* <div className="search__img">🔍</div> */}
       </div>
       <StyledNav>
         {/* Links de navegación */}
@@ -74,10 +75,10 @@ const Header = ({ onSearchChange }) => {
         <Link to="/about">About</Link>
       </StyledNav>
       {/* NOTACION BEM */}
-      <button className="button button--large">
+      {/* <button className="button button--large">
         <span className="button__icon">Icon</span>
         <span className="button__text">Click me</span>
-      </button>
+      </button> */}
 
     </StyledHeader>
   );
