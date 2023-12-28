@@ -1,4 +1,42 @@
+// .about {
+//   padding: 20px;
+//   text-align: center;
+//   background-color: orange;
+  
+// }
+
+// En tu archivo About.module.scss
 .about {
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  padding: 20px;
+
+  a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  p {
+    color: #333;
+    margin-top: 10px;
+    line-height: 1.5;
+  }
+
+  &:hover {
+    background-color: #ffcb05;
+    transition: background-color 0.3s ease-in-out;
+  }
 }
