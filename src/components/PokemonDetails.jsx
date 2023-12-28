@@ -39,9 +39,13 @@ const PokemonDetails = () => {
               {pokemonDetails.types.map(type => <span key={type.type.name}>{type.type.name}</span>)}
             </div>
             <div className={styles.weakness}>
-              {/* You'll need to implement a method to calculate weaknesses */}
+              {/* You'll need to implement a method to calculate weaknesses  
+              Necesitarás implementar un método para calcular las debilidades*/}
+
               <h3>Weakness</h3>
-              {/* Dummy data for example */}
+              {/* Dummy data for example
+              Datos ficticios, por ejemplo */}
+
               <span>Water</span>
               <span>Ground</span>
             </div>
@@ -58,7 +62,9 @@ const PokemonDetails = () => {
         </motion.div>        
         <div className={styles.stats}>
           <h3>Status</h3>
-          {/* Map through stats for display */}
+          {/* Map through stats for display
+          Mapa a través de estadísticas para visualización */}
+          
           {pokemonDetails.stats.map(stat => (
             <div key={stat.stat.name} className={styles.stat}>
               <span className={styles.statName}>{stat.stat.name}</span>

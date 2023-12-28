@@ -21,7 +21,7 @@ const About = () => {
             </div>
             <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${randomId}.png`} alt="Bulbasaur" />
             <p>This is a Pokémon app developed using ReactJS and SASS. It uses data from PokeAPI.</p>
-            <p>Developer: [Tu Nombre]</p>
+            <p>Developer: Nora Petro Torres. </p>
         </div>
     );
 };
