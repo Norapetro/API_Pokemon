@@ -22,7 +22,7 @@ const Header = ({ onSearchChange }) => {
         {/* Links de navegación */}
         <Link to="/" onClick={() => onSearchChange("")}>Home💥</Link>
         <Link to="/about">💥About</Link>
-        {/* <Button variant="contained">Hello world</Button> */}
+        {/* <Button variant="contained">Cargar +</Button> */}
       </nav>
     </header>
   );

@@ -42,7 +42,7 @@ const About = () => {
                         <img width={30} src={pokeball} alt="pokeball" />
                     </Link>
                 </div>
-                <p className="pokemon-name">{pokemonName}</p>
+                <h2 className="pokemon-name">{pokemonName}</h2>
             </div>
             <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${randomId}.png`} alt={pokemonName} />
             <p>{`This is a app developed using ReactJS and SASS. It uses data from PokeAPI.`}</p>
